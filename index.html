@@ -27,11 +27,11 @@
             <form action="">
                         <div>
                             <label for="id">Matricula:</label>
-                            <input type="number" name="id_student" id="id_student" class="field">
+                            <input type="number" name="id_student" id="id_student" class="field" required>
                         </div>
                         <div>
                             <label for="name">Nombre:</label>
-                            <input type="text" name="name" id="name" class="field">
+                            <input type="text" name="name" id="name" class="field" required>
                         </div>
                         <div>
                             <label for="type_process">Tipo de tramite:</label>
@@ -41,9 +41,14 @@
                                 <option value="baja">Baja administrativa</option>
                             </select>
                         </div>
-                <input type="submit" value="Enviar" class="form-submit">
-            </form>
+                <input type="submit" value="Enviar" class="form-submit" onclick="clicked();">
+            </form><br>
+            <div class="alert-success">
+                <p><a href="">Descargar constancia</a></p>
+            </div>
         </section>
     </main>
+    <script src="./scripts/scripts.js"></script>
+
 </body>
 </html>
