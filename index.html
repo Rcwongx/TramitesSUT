@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tramites - Escuela de Sistemas UT</title>
+    <meta name="description" content="Realiza tramites administrativos de la Escuela de Sistemas UT">
     <link rel="stylesheet" href="./styles/general.css">
 <body>
     <header>
@@ -14,41 +15,35 @@
             </div>
             <ul class="nav-list">
                 <li class="opt_active">Tramites</li>
-                <li><a href="">Consultas</a></li>
+                <li><a href="./consultas.html">Consultas</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="process">
             <h2>Realiza tu tramite administrativo</h2><br>
-            <p>Sigue los pasos para completar tu tramite:</p><br>
+            <p>Ingresa los datos para realizar el tramite:</p><br>
             
             <form action="">
-                <fieldset>
-                    <legend>Paso 1</legend>
                         <div>
                             <label for="id">Matricula:</label>
-                            <input type="number" name="id_student" id="id_student">
+                            <input type="number" name="id_student" id="id_student" class="field">
                         </div>
                         <div>
                             <label for="name">Nombre:</label>
-                            <input type="text" name="name" id="name">
+                            <input type="text" name="name" id="name" class="field">
                         </div>
                         <div>
                             <label for="type_process">Tipo de tramite:</label>
-                            <select name="type_process" id="">
+                            <select name="type_process" id="" class="field">
                                 <option value="constancia">Constancia</option>
                                 <option value="kardex">Kardex</option>
                                 <option value="baja">Baja administrativa</option>
                             </select>
                         </div>
-
-                </fieldset>
                 <input type="submit" value="Enviar" class="form-submit">
             </form>
         </section>
     </main>
-    <script src="scripts/slide_down.js"></script>
-
 </body>
 </html>

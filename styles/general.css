@@ -47,10 +47,7 @@ body{
     display: inline-block;
     padding-right: 16px;
 }
-@media screen and (max-width: 600px) {
-    .topnav li:not(:last-child) {display: none;}
-    .topnav{ font-weight:  500;}
-  }
+
 .process{
     padding: 16px;
     font-family: 'Roboto';
@@ -77,3 +74,26 @@ body{
     transition: 0.5s;
 
 }
+input, select{
+    border: none;
+    outline: none;
+}
+label{
+    font-family: 'Arial';
+    font-size: 14px;
+}
+.field{
+    display: block;
+    width: 50%;
+    padding: 6px;
+    border: solid 1px #ccc;
+    border-radius: 3px;
+}
+.field:focus{
+    border: solid 1px var(--secondary-color);
+}
+@media screen and (max-width: 600px) {
+    .topnav li:not(:last-child) {display: none;}
+    .topnav{ font-weight:  500;}
+    .field{ width: 100%;}
+  }
